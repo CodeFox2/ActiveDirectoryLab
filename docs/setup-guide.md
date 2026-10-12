@@ -11,5 +11,7 @@
 <img src="https://github.com/user-attachments/assets/961e4ff6-44bf-41ad-9188-f24bce246539" style="max-width: 100%; height: auto;" alt="Network Diagram">
 <br>
 <h1>2. Virtual Machines and Network Configuration</h1>
-<h2>Client and Server Virtual Machine Configurations</h2>
-
+<h2>Server and Client Virtual Machine Configurations</h2>
+<p>Inside the VirtualBox virtual machine select "New", name the virtual machine DC for Domain Controller. Set the operating system as "Other Windows 64-bit".</p>
+<p>Back to the VM main window in settings enable expert in the top left corner. Ensure both Shared Clipboard and Drag-and-Drop have bidirectional enabled in the dropdown. Go to the network tab and enable network adapter 2 and set it as "internal network"</p> 
+<p>Once finished start up the DC virtual machine and select the Windows Server 2022.iso</p>
