@@ -15,3 +15,13 @@
 <p>Inside the VirtualBox virtual machine select "New", name the virtual machine DC for Domain Controller. Set the operating system as "Other Windows 64-bit".</p>
 <p>Back to the VM main window in settings enable expert in the top left corner. Ensure both Shared Clipboard and Drag-and-Drop have bidirectional enabled in the dropdown. Go to the network tab and enable network adapter 2 and set it as "internal network"</p> 
 <p>Once finished start up the DC virtual machine and select the Windows Server 2022.iso</p>
+<img src="https://github.com/user-attachments/assets/60e1016b-1ee9-44a0-b43c-15d442319bb7" style="max-width: 100%; height: auto;" alt="Server Select">
+<p>In the install menu select the "Desktop Experience" option and install to disk 0. <strong>While installing do not press anything</strong> and let it boot into windows. Once your in set a password</p>
+<br>
+<h3>Internal Network Interface Card (NIC) Setup</h3>
+<ul>
+  <li>Click on your network icon on the bottom right status bar > Unidentified Network > Change adapter options</li>
+  <li>Once inside the window with 2 ethernet options check the IPv4 Address to identify if it's the home address i.e 10.x.x.xx. If its accurate then it would be the external NIC that is connected to the internet</li>
+  <li>Automatically assigned ip of 169.x.x.xx would be the internal NIC</li>
+  <li>Name both appropriately i.e INTERNET & X_INTERNAL_X</li>
+</ul>
